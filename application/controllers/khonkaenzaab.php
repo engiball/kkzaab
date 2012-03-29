@@ -31,7 +31,7 @@ class Khonkaenzaab extends CI_Controller {
 			$this->load->library('session');
 			$this->data['loginurl'] =$this->facebook_model->login_url();
 			$this->data['user']=$this->session->userdata('user');
-			//$this->load->library('facebook_lib');
+			
 		}
 		
 	public function index()
