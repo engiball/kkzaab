@@ -1,0 +1,17 @@
+  
+<div class="footer">
+ 
+    <table width="100%" border="0" cellspacing="1" cellpadding="0">
+      <tr>
+        <td width="34%" valign="top"><p>ข้อมูลร้านอาหาร</p></td>
+        <td width="47%" valign="top"><p>ข้อมูลที่พัก</p>
+        <p>&nbsp;</p></td>
+        <td width="19%" valign="top"><p>ข้อมูลท่องเที่ยว </p></td>
+      </tr>
+    </table>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+ 
+</body>
+</html>
+ 

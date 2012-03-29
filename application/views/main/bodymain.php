@@ -1,0 +1,165 @@
+
+<?
+	// slide show ในเมน
+	$slide= "application/views/main/slide.php";
+	$show_rest= "application/views/main/show_rest.php";
+	$basic_search_rest= "application/views/main/basic_search_rest.php";
+	$basic_search_room= "application/views/main/basic_search_room.php";
+	$show_room= "application/views/main/show_room.php";
+	$news= "application/views/main/news.php";
+	//echo $slide;
+	include($slide);
+	include($news);
+?>
+       
+ 
+     
+  <div class="content">
+  	<centeR>
+  
+<?
+    // ร้านอาหาร
+	include($basic_search_rest); // ส่วนของ การค้นหา
+?>
+    </centeR>
+
+    <p></p>
+    <!--
+ <div class=map >
+ <iframe width="750" height="130" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/?ie=UTF8&amp;ll=16.446025,102.832074&amp;spn=0.012327,0.01929&amp;t=m&amp;z=16&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/?ie=UTF8&amp;ll=16.446025,102.832074&amp;spn=0.012327,0.01929&amp;t=m&amp;z=16&amp;source=embed" style="color:#0000FF;text-align:left">ดูแผนที่ขนาดใหญ่ขึ้น</a></small>
+  </div> 
+  -->
+ <?
+    // ร้านอาหาร
+ 
+	include($show_rest);// แสดงการค้นหา
+
+?>  
+    
+       <p></p>
+    <center>
+      
+
+ <?
+    // ร้านห้อง
+	include($basic_search_room); // ส่วนของ การค้นหา
+	include($show_room);  // แสดงการค้นหา
+
+?>  
+     
+      <p>&nbsp;</p>
+      <table width="99%" border="0" cellpadding="0" cellspacing="1" class="blockshadow" >
+        <tr>
+          <td bgcolor="#f9f7f7"><table width="100%" border="0" cellspacing="1" cellpadding="0">
+            <tr>
+              <td colspan="4" bgcolor="#33CCFF">แหล่งท่องเที่ยว</td>
+            </tr>
+            <tr>
+              <td width="25%" bgcolor="#D5FFE1">&gt; <a href="#">แหล่งท่องเที่ยวธรรมชาติ</a></td>
+              <td width="25%" bgcolor="#D5FFE1">&gt; <a href="#">เทศกาลต่างๆ</a></td>
+              <td width="25%" bgcolor="#D5FFE1">&gt; <a href="#">แหล่งช๊อปปิ้ง</a></td>
+              <td width="25%" bgcolor="#D5FFE1">&gt; <a href="#">บันทึกนักเดินทาง</a></td>
+            </tr>
+            <tr>
+              <td width="25%" bgcolor="#D5FFE1">&gt; <a href="#">แนะนำที่เที่ยวแซบๆ</a></td>
+              <td width="25%" bgcolor="#D5FFE1">&gt; <a href="#">เที่ยวแบบประหยัด</a></td>
+              <td width="25%" bgcolor="#D5FFE1">&gt; <a href="#">เที่ยวในตัวเมือง</a></td>
+              <td width="25%" bgcolor="#D5FFE1">&gt; <a href="#">ของฝากขอนแก่น</a></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    </center>
+    <table width="100%" border="0" cellspacing="1" cellpadding="0">
+      <tr >
+        <td width="50%" colspan="2" bgcolor="#33CCFF">แหล่งท่องเที่ยว</td>
+      </tr>
+      <tr>
+        <td width="50%"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="blockshadow">
+          <tr>
+            <td width="41%" rowspan="3" valign="top" bgcolor="#0099FF"><p>รุปภาพ</p></td>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ชื่อร้านอาหาร : ร้านป้าอ้วนซีฟูด</td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ประเภทร้าน :</td>
+          </tr>
+          <tr>
+            <td width="28%" valign="top" bgcolor="#FFFFFF">View : 9 </td>
+            <td width="31%" valign="top" bgcolor="#FFFFFF">Review : 4</td>
+          </tr>
+        </table></td>
+        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="blockshadow">
+          <tr>
+            <td width="41%" rowspan="3" valign="top" bgcolor="#0099FF"><p>รุปภาพ</p></td>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ชื่อร้านอาหาร : ร้านป้าอ้วนซีฟูด</td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ประเภทร้าน :</td>
+          </tr>
+          <tr>
+            <td width="28%" valign="top" bgcolor="#FFFFFF">View : 9 </td>
+            <td width="31%" valign="top" bgcolor="#FFFFFF">Review : 4</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="blockshadow">
+          <tr>
+            <td width="41%" rowspan="3" valign="top" bgcolor="#0099FF"><p>รุปภาพ</p></td>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ชื่อร้านอาหาร : ร้านป้าอ้วนซีฟูด</td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ประเภทร้าน :</td>
+          </tr>
+          <tr>
+            <td width="28%" valign="top" bgcolor="#FFFFFF">View : 9 </td>
+            <td width="31%" valign="top" bgcolor="#FFFFFF">Review : 4</td>
+          </tr>
+        </table></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="blockshadow">
+          <tr>
+            <td width="41%" rowspan="3" valign="top" bgcolor="#0099FF"><p>รุปภาพ</p></td>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ชื่อร้านอาหาร : ร้านป้าอ้วนซีฟูด</td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ประเภทร้าน :</td>
+          </tr>
+          <tr>
+            <td width="28%" valign="top" bgcolor="#FFFFFF">View : 9 </td>
+            <td width="31%" valign="top" bgcolor="#FFFFFF">Review : 4</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="blockshadow">
+          <tr>
+            <td width="41%" rowspan="3" valign="top" bgcolor="#0099FF"><p>รุปภาพ</p></td>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ชื่อร้านอาหาร : ร้านป้าอ้วนซีฟูด</td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ประเภทร้าน :</td>
+          </tr>
+          <tr>
+            <td width="28%" valign="top" bgcolor="#FFFFFF">View : 9 </td>
+            <td width="31%" valign="top" bgcolor="#FFFFFF">Review : 4</td>
+          </tr>
+        </table></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="blockshadow">
+          <tr>
+            <td width="41%" rowspan="3" valign="top" bgcolor="#0099FF"><p>รุปภาพ</p></td>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ชื่อร้านอาหาร : ร้านป้าอ้วนซีฟูด</td>
+          </tr>
+          <tr>
+            <td colspan="2" valign="top" bgcolor="#FFFFFF">ประเภทร้าน :</td>
+          </tr>
+          <tr>
+            <td width="28%" valign="top" bgcolor="#FFFFFF">View : 9 </td>
+            <td width="31%" valign="top" bgcolor="#FFFFFF">Review : 4</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <h1></h1>
+    <h2>&nbsp;</h2>
+  <!-- end .content --></div>

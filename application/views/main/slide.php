@@ -1,0 +1,20 @@
+
+    <div class=update  > 
+
+
+
+        <div id="gallery">
+                <a href="#"  >
+                <img src="<? echo base_url("slide/slide1.gif");?> " alt="1" width="100%" height="220" title="" alt="" rel="<h3>1</h3>aaaaaaa "/>
+            </a>
+                <a href="#"  >
+                <img src="<? echo base_url("slide/slide2.gif");?>" alt="2" width="100%" height="220" title="" alt="" rel="<h3>2</h3>bbbbbbbbbbbbbbb "/>
+            </a>
+                    <a href="#" class="show">
+                <img src="<? echo base_url("slide/slide3.gif");?>" alt="3" width="100%" height="220" title="" alt="" rel="<h3>3</h3>ccccccccccc "/>
+            </a>
+                <div class="caption">
+                  <div class="content "></div>
+                </div>
+      </div>
+          </div> 

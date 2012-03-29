@@ -1,0 +1,62 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Khonkaenzaab extends CI_Controller {
+	public $data ;
+	/**
+	 * Index Page for this controller.
+	 *
+	 * Maps to the following URL
+	 * 		http://example.com/index.php/welcome
+	 *	- or -  
+	 * 		http://example.com/index.php/welcome/index
+	 *	- or -
+	 * Since this controller is set as the default controller in 
+	 * config/routes.php, it's displayed at http://example.com/
+	 *
+	 * So any other public methods not prefixed with an underscore will
+	 * map to /index.php/welcome/<method_name>
+	 * @see http://codeigniter.com/user_guide/general/urls.html
+	 */
+	public function index()
+	{
+		if ($this->agent->is_mobile('iphone'))
+		{
+		    $this->load->view('iphone/home');
+		}
+		else if ($this->agent->is_mobile())
+		{
+		    $this->load->view('mobile/home');
+		}
+		else
+		{  
+			$this->load->view('header/header');
+			$this->load->view('main/bodymain');
+			$this->load->view('footer/footer');
+		}
+	}
+
+
+	public function rest()
+	{
+		$this->data["a"] ="12345";
+		$this->data["b"] ="12345";
+		$this->load->view('header/header');
+		$this->load->view('main/rest');
+ 
+		$this->load->view('footer/footer' );
+	}
+
+	public function viewdetail()
+	{
+		$this->data["a"] ="12345";
+		$this->data["b"] ="12345";
+		$this->load->view('header/header');
+		$this->load->view('main/viewdetail');
+ 
+		$this->load->view('footer/footer' );
+	}
+
+}
+
+/* End of file welcome.php */
+/* Location: ./application/controllers/welcome.php */
