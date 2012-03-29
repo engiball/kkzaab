@@ -29,6 +29,8 @@ class Khonkaenzaab extends CI_Controller {
 			$this->load->library('form_validation');
 			$this->load->library('parser');
 			$this->load->library('session');
+			$this->data['loginurl'] =$this->facebook_model->login_url();
+			$this->data['user']=$this->session->userdata('user');
 			//$this->load->library('facebook_lib');
 		}
 		
@@ -47,8 +49,7 @@ class Khonkaenzaab extends CI_Controller {
 		{  
 		
 			//$this->data['logouturl']=$this->facebook_model->logout_url();
-			$this->data['loginurl'] =$this->facebook_model->login_url();
-			$this->data['user']=$this->session->userdata('user');
+			
 			$this->load->view('header/header',$this->data);
 			$this->load->view('main/bodymain');
 			$this->load->view('footer/footer');
@@ -62,16 +63,26 @@ class Khonkaenzaab extends CI_Controller {
 		$this->data['user']=$this->facebook_model->username();
 	 	$this->data['loginurl'] =$this->facebook_model->login_url();
 		$this->data['logouturl'] = $this->facebook_model->logout_url();
-		$this->load->view('main',$this->data);
-      
+			$this->load->view('header/header',$this->data);
+			$this->load->view('main/bodymain');
+			$this->load->view('footer/footer');
 	 }
-	 
+	 	public function logout(){
+	
+	$this->data['loginurl'] =$this->facebook_model->login_url();
+	$this->data['user']="";
+	$this->session->unset_userdata('userid');
+	$this->load->view('header/header',$this->data);
+			$this->load->view('main/bodymain');
+			$this->load->view('footer/footer');
+	}
+	
 	 
 	public function rest()
 	{
 		$this->data["a"] ="12345";
 		$this->data["b"] ="12345";
-		$this->load->view('header/header');
+		$this->load->view('header/header',$this->data);
 		$this->load->view('main/rest');
  
 		$this->load->view('footer/footer' );
@@ -81,7 +92,7 @@ class Khonkaenzaab extends CI_Controller {
 	{
 		$this->data["a"] ="12345";
 		$this->data["b"] ="12345";
-		$this->load->view('header/header');
+		$this->load->view('header/header',$this->data);
 		$this->load->view('main/viewdetail');
  
 		$this->load->view('footer/footer' );
@@ -92,7 +103,7 @@ public function profile()
 	{
 		$this->data["a"] ="12345";
 		$this->data["b"] ="12345";
-		$this->load->view('header/header');
+		$this->load->view('header/header',$this->data);
 		$this->load->view('main/profile');
  
 		$this->load->view('footer/footer' );

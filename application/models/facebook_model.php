@@ -10,15 +10,16 @@ class facebook_model extends CI_Model{
 	  var $LoginUrl;
 	  var $LogoutUrl;
 	   var $facebook;
-	 
+	  var $facebook_login='index.php/khonkaenzaab/facebook_login';
+	  var $facebook_logout='index.php/khonkaenzaab/logout';
     function __construct()
     {
         // Call the Model constructor
         parent::__construct();
 		 require 'facebook.php';
 		$params['scope'] ='read_stream,email,user_birthday';
-		$params['redirect_uri'] =current_url();
-		$paramsOut = array( 'next' => base_url() );
+		$params['redirect_uri'] =base_url($this->facebook_login);
+		$paramsOut = array( 'next' => base_url($this->facebook_logout));
 		$this->facebook = new Facebook(array(
 		'appId'  => '377185465635859',
 		'secret' => 'a8d91b8a13d56082f1f7b89fdbf0bfa0',

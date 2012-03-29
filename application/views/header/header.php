@@ -343,13 +343,12 @@ ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it ne
 		}
 		?>
 		<?if(!@$user||@$user==""){?>
-		<? //echo form_open_multipart('main/login');?>
-		<form style='display:inline;'>
+		<? echo form_open_multipart('main/login');?>
 		email<input type=text name=email id=email />
 		password<input type=password name=password id=password/>
 		<input type=hidden name=c_url value='<? echo uri_string();?>'/>
 		<input type=submit value="Login"/>
-		<? }else{echo "<a href='" .base_url('index.php/main/logout') ."'>logout</a>"; }?>
+		<? }else{echo "<a href='" .base_url('index.php/Khonkaenzaab/logout') ."'>logout</a>"; }?>
 		</form>
 		
 		</td>
